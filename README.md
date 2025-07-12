@@ -91,7 +91,7 @@ Grid search was used with cross-validation to find optimal hyperparameters:
 | Random Forest Regressor    | 14.60  | 470.16   | 0.929    |
 | Gradient Boosting Regressor| 14.79  | 464.63   | 0.930    |
 
-** Best Model**  
+ **Best Model**  
 ElasticNet Regression performed the best overall, achieving the lowest MAE (**14.16**) and highest R² score (**0.935**).
 
 
