@@ -11,7 +11,7 @@ This project applies machine learning regression models to predict the boiling p
 
 ## Dataset
 
-The dataset contains **777 molecular descriptors** for 5431 molecules, along with their **boiling point values (`BP`)**. These descriptors capture structural, topological, physicochemical, and electronic properties of molecules.
+The dataset contains 777 molecular descriptors for 5431 molecules, along with their boiling point values (`BP`). These descriptors capture structural, topological, physicochemical, and electronic properties of molecules.
 
 ### Important Descriptors Used in Analysis
 
@@ -43,7 +43,7 @@ The dataset file used: `chem_data.csv`
 - Scatter plots between each key descriptor and boiling point
 
 ### 3. Base Models
-- **Linear Regression** using selected features
+- Linear Regression using selected features
 - Evaluation using Mean Absolute Error (MAE)
 
 ### 4. Additional Regression Models
@@ -73,10 +73,10 @@ Grid search was used with cross-validation to find optimal hyperparameters:
 - Gradient Boosting Regressor: {'n_estimators': 200, 'learning_rate': 0.1, 'max_depth': 5}
 
 ### 6. Results
-**Boiling Point (BP)** prediction was evaluated using three key metrics:  
-- **MAE**: Mean Absolute Error  
-- **MSE**: Mean Squared Error  
-- **R²**: Coefficient of Determination  
+Boiling Point (BP) prediction was evaluated using three key metrics:  
+- MAE: Mean Absolute Error  
+- MSE: Mean Squared Error  
+- R²: Coefficient of Determination  
 > *Note: BP is measured in degrees Celsius.*
 
 | Model                      | MAE    | MSE      | R² Score |
@@ -91,8 +91,8 @@ Grid search was used with cross-validation to find optimal hyperparameters:
 | Random Forest Regressor    | 14.60  | 470.16   | 0.929    |
 | Gradient Boosting Regressor| 14.79  | 464.63   | 0.930    |
 
- **Best Model**  
-ElasticNet Regression performed the best overall, achieving the lowest MAE (**14.16**) and highest R² score (**0.935**).
+#### Best Model  
+ElasticNet Regression performed the best overall, achieving the lowest MAE (14.16) and highest R² score (0.935).
 
 
 ## Libraries and Tools Used
