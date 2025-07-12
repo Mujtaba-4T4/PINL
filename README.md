@@ -4,9 +4,9 @@ This project applies machine learning regression models to predict the boiling p
 
 ## Team Members
 
-- Mujtaba Azeem  
+- Mujtaba-4T4
 - TurboGlitch
-- Hydro
+- Hydroxymeth
 
 
 ## Dataset
