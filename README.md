@@ -1,7 +1,6 @@
 # PINL
 This project applies machine learning regression models to predict the boiling points of chemical compounds using molecular descriptors. It includes data cleaning, feature exploration, visualization, multiple regression techniques, and model hyperparameter tuning.
 
----
 
 ## Team Members
 
@@ -9,15 +8,12 @@ This project applies machine learning regression models to predict the boiling p
 - TurboGlitch
 - Hydro
 
----
 
 ## Dataset
 
-The dataset contains **777 molecular descriptors** for various chemical compounds, along with their **boiling point values (`BP`)**. These descriptors capture structural, topological, physicochemical, and electronic properties of molecules.
+The dataset contains **777 molecular descriptors** for 5431 molecules, along with their **boiling point values (`BP`)**. These descriptors capture structural, topological, physicochemical, and electronic properties of molecules.
 
 ### Important Descriptors Used in Analysis
-
-The following descriptors were manually selected or analyzed through correlation and visualization, and played a key role in model performance:
 
 | Descriptor ID | Descriptor Name |
 |---------------|------------------|
@@ -34,8 +30,6 @@ The following descriptors were manually selected or analyzed through correlation
 | D373          | Fraction Csp3 |
 
 The dataset file used: `chem_data.csv`
-
----
 
 ## Workflow Summary
 
@@ -97,10 +91,9 @@ Grid search was used with cross-validation to find optimal hyperparameters:
 | Random Forest Regressor    | 14.60  | 470.16   | 0.929    |
 | Gradient Boosting Regressor| 14.79  | 464.63   | 0.930    |
 
-**🔍 Best Model**  
+** Best Model**  
 ElasticNet Regression performed the best overall, achieving the lowest MAE (**14.16**) and highest R² score (**0.935**).
 
----
 
 ## Libraries and Tools Used
 
